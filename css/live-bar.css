@@ -1,0 +1,127 @@
+.live-bar {
+  position: relative;
+  -webkit-box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.75);
+  z-index: 9;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.live-bar .movie-background {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-image: url(https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2019/04/114892_0422b-h_2019.jpg);
+}
+
+.live-bar .movie-background .layer {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.live-bar .movie-background .movie-content {
+  padding: 10px;
+  position: relative;
+}
+
+.live-bar .movie-background .movie-content h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.live-bar .movie-background .movie-content p {
+  color: #C7C7C7;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.live-bar .movie-background i {
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.live-bar .movie-background .continue {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+}
+
+@media (max-width: 1280px) {
+  .live-bar .movie-background .movie-content h1 {
+    font-size: 19px;
+  }
+  .live-bar .movie-background .movie-content p {
+    font-size: 12px;
+  }
+}
+
+.live-bar .seasons {
+  position: relative;
+  width: 100%;
+}
+
+.live-bar .seasons .season {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #F8D35E;
+  color: #0D0D0D;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: 300ms height ease-in-out;
+  transition: 300ms height ease-in-out;
+}
+
+.live-bar .seasons .season .season-btn {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 22px 25px;
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.live-bar .seasons .season .season-btn i {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.live-bar .seasons .season .season-sub {
+  display: none;
+  background: #FEE189;
+  padding: 22px 25px;
+}
+
+.live-bar .seasons .season .season-sub a {
+  color: #0D0D0D;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px;
+  width: 100%;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
+}
+
+.live-bar .seasons .season .season-sub a:hover {
+  font-weight: 600;
+}
+/*# sourceMappingURL=live-bar.css.map */

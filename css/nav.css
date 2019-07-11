@@ -1,0 +1,116 @@
+nav {
+  position: relative;
+  -webkit-box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.75);
+  z-index: 9;
+}
+
+nav .welcome {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+nav .welcome .profile-image {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://i.ytimg.com/vi/WSXLGQKMYCQ/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+nav .welcome .welcome-message {
+  width: 110px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+nav .welcome .welcome-message p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+nav .welcome .welcome-message a {
+  display: block;
+  margin-top: 25px;
+}
+
+@media (max-width: 1280px) {
+  nav .welcome .profile-image {
+    width: 75px;
+    height: 75px;
+  }
+  nav .welcome .welcome-message {
+    width: 80px;
+  }
+  nav .welcome .welcome-message p {
+    font-size: 18px;
+  }
+  nav .welcome .welcome-message a {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}
+
+nav .nav-content .nav-scroll {
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+nav .nav-content h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #C7C7C7;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+nav .nav-content a {
+  display: block;
+  padding: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  -webkit-transition: 250ms all ease-in-out;
+  transition: 250ms all ease-in-out;
+}
+
+nav .nav-content a:hover, nav .nav-content .active {
+  background: #F8D35E;
+  color: #0D0D0D;
+}
+
+nav .nav-content .type, nav .nav-content .playlist {
+  margin-top: 75px;
+}
+
+nav .nav-content .getip {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #37323E;
+}
+
+nav .nav-content .getip a {
+  font-size: 18px;
+}
+
+nav .nav-content .getip i {
+  margin-right: 10px;
+}
+
+@media (max-width: 1280px) {
+  nav .nav-content a {
+    font-size: 19px;
+    padding: 8px 15px;
+  }
+  nav .nav-content .type, nav .nav-content .playlist {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,172 @@
+.main {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.main .main-content {
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+  position: relative;
+}
+
+.main .main-content .search-bar {
+  margin: 0 auto;
+  margin-top: 25px;
+  position: relative;
+  width: 92%;
+  height: 70px;
+  background: #37323E;
+  border-radius: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 6px 35px rgba(55, 50, 62, 0.8);
+          box-shadow: 0 6px 35px rgba(55, 50, 62, 0.8);
+}
+
+@media (max-width: 1280px) {
+  .main .main-content .search-bar {
+    height: 55px;
+  }
+}
+
+.main .main-content .search-bar .search-bar-input {
+  width: 75%;
+  height: 100%;
+  background: transparent;
+  color: #C7C7C7;
+  padding-left: 15px;
+  font-size: 20px;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.main .main-content .search-bar .search-bar-btn {
+  width: 25%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  background: #F8D35E;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+.main .main-content .main-content-boxes {
+  margin: 0 auto;
+  width: calc(92% + 30px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.main .main-content .main-content-boxes .box {
+  width: calc(25% - 34px);
+  margin: 15px;
+  height: 38vh;
+  background-image: url(https://m.media-amazon.com/images/M/MV5BOTg5MzA1MjAwNV5BMl5BanBnXkFtZTgwNzAwMDU5NjM@._V1_.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 6px 30px rgba(55, 50, 62, 0.85);
+          box-shadow: 0 6px 30px rgba(55, 50, 62, 0.85);
+  cursor: pointer;
+  -webkit-transition: 150ms -webkit-transform ease-in-out;
+  transition: 150ms -webkit-transform ease-in-out;
+  transition: 150ms transform ease-in-out;
+  transition: 150ms transform ease-in-out, 150ms -webkit-transform ease-in-out;
+  border: 2px solid transparent;
+}
+
+.main .main-content .main-content-boxes .box:hover {
+  -webkit-transform: scale(1.0125);
+          transform: scale(1.0125);
+  border: 2px solid #F8D35E;
+}
+
+.main .main-content .main-content-boxes .active-box {
+  border: 2px solid #F8D35E;
+}
+
+.main .main-content .main-content-boxes .add-new-box {
+  position: relative;
+  background: #37323E;
+}
+
+.main .main-content .main-content-boxes .add-new-box i {
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
+  color: #C7C7C7;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main .main-content .main-content-boxes .add-new-box:hover {
+  border: 2px solid transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main .main-content .main-content-boxes .add-new-box:hover i {
+  color: #fff;
+}
+
+@media (max-width: 1280px) {
+  .main .main-content .main-content-boxes {
+    width: calc(92% + 20px);
+  }
+  .main .main-content .main-content-boxes .box {
+    margin: 10px;
+    width: calc(33.33% - 24px);
+  }
+}
+
+.main .add-new-show-popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 92%;
+  height: 95vh;
+  background: #37323E;
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.main .add-new-show-popup .add-new-container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #C7C7C7;
+}
+
+.main .add-new-show-popup .add-new-container label {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 25px;
+}
+
+.main .add-new-show-popup .add-new-container input, .main .add-new-show-popup .add-new-container textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

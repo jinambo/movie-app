@@ -1,0 +1,100 @@
+.live-bar {
+    position: relative;
+    box-shadow: 0px 6px 25px rgba(0,0,0,.75);
+    z-index: 9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .movie-background {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background-image: url(https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2019/04/114892_0422b-h_2019.jpg);
+        .layer {
+            background: rgba(0,0,0,.5);
+            position: absolute;
+            width: 100%; height: 100%;
+            top: 0;
+        }
+        .movie-content {
+            padding: 10px;
+            position: relative;
+            h1 { color: #fff; font-size: 24px; font-weight: 600; }
+            p {
+                color: #C7C7C7;
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
+        i {
+            font-size: 35px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+        .continue {
+            color: #fff;
+            font-weight: 400;
+            font-size: 18px;
+            position: absolute;
+            bottom: 4%; left: 4%;
+        }
+
+        @media (max-width: 1280px) {
+            .movie-content {
+                h1 { font-size: 19px; }
+                p { font-size: 12px }
+            }
+        }
+    }
+
+    .seasons {
+        position: relative;
+        width: 100%;
+        .season {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #F8D35E;
+            color: #0D0D0D;
+            font-weight: 600;
+            font-size: 20px;
+            transition: 300ms height ease-in-out;
+            .season-btn {
+                //box-shadow: 0 1px 6px rgba(0,0,0,.25);
+                border-bottom: 2px solid rgba(0,0,0,.15); 
+                padding: 22px 25px;
+                position: relative;
+                font-size: 18px;
+                cursor: pointer;
+                i {
+                    position: absolute;
+                    top: 50%; right: 5%;
+                    transform: translate(-50%, -50%);
+                    transition: 200ms all ease-in-out;
+                }
+            }
+            .season-sub { 
+                display: none;
+                background: #FEE189;
+                padding: 22px 25px;
+                a {
+                    color: #0D0D0D;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 8px;
+                    width: 100%;
+                    transition: 150ms all ease-in-out;
+                    &:hover {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

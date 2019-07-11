@@ -1,0 +1,92 @@
+nav {
+    position: relative;
+    box-shadow: 0px 6px 25px rgba(0,0,0,.75);
+    z-index: 9;
+    .welcome {
+        position: relative;
+        display: flex;
+        padding: 20px;
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            background-image: url(https://i.ytimg.com/vi/WSXLGQKMYCQ/maxresdefault.jpg);
+            background-position: center;
+            background-size: cover; 
+            border-radius: 50%;
+        }
+        .welcome-message {
+            width: 110px;
+            margin-left: 20px;
+            margin-top: 5px;
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                color: #fff;
+            }
+            a {
+                display: block;
+                margin-top: 25px;
+            }
+        }
+        @media (max-width: 1280px) {
+            .profile-image {
+                width: 75px;
+                height: 75px;
+            }
+            .welcome-message {
+                width: 80px;
+                p { font-size: 18px; }
+                a { margin-top: 5px; font-size: 15px; }
+            }
+        }
+    }
+    .nav-content {
+        .nav-scroll {
+            height: 85vh;
+            overflow-y: scroll;
+        }
+        h3 {
+            font-size: 15px;
+            font-weight: 300;
+            color: #C7C7C7;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+        a {
+            display: block;
+            padding: 20px;
+            font-size: 21px;
+            font-weight: 500;
+            transition: 250ms all ease-in-out;
+        }
+        a:hover, .active {
+            background: #F8D35E;
+            color: #0D0D0D;
+        }
+        .type, .playlist{
+            margin-top: 75px;
+        }
+        .getip {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background: #37323E;
+            a {
+                font-size: 18px;
+            }
+            i { margin-right: 10px; }
+        }
+        @media (max-width: 1280px) {
+            a {
+                font-size: 19px;
+                padding: 8px 15px;
+            }
+            .type, .playlist {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+

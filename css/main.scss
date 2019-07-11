@@ -1,0 +1,135 @@
+// COLOR VARIALBES
+$more_dark: #37323E;
+$less_dark: #6D6A75;
+
+$margin: 15px;
+
+.main {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .main-content {
+        width: 100%;
+        height: 100px;
+        z-index: 999;
+        position: relative;
+        .search-bar {
+            margin: 0 auto;
+            margin-top: 25px;
+            position: relative;
+            width: 92%;
+            height: 70px;
+            background: $more_dark;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 6px 35px rgba(55, 50, 62, .8);
+            @media (max-width: 1280px) {
+                height: 55px;
+            }
+            .search-bar-input {
+                width: 75%;
+                height: 100%;
+                background: transparent;
+                color: #C7C7C7;
+                padding-left: 15px;
+                font-size: 20px; 
+                transition: 200ms all ease-in-out;
+            }
+            .search-bar-btn {
+                width: 25%;
+                height: 100%;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 500;
+                background: #F8D35E;
+                transition: 200ms all ease-in-out;
+            }
+        }
+        .main-content-boxes {
+            margin: 0 auto;
+            width: calc(92% + 30px); // add margin space to it
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            .box {
+                width: calc(25% - 34px); // minus margin and border
+                margin: $margin;
+                height: 38vh;
+                background-image: url(https://m.media-amazon.com/images/M/MV5BOTg5MzA1MjAwNV5BMl5BanBnXkFtZTgwNzAwMDU5NjM@._V1_.jpg);
+                background-position: center;
+                background-size: cover; 
+                border-radius: 8px; 
+                box-shadow: 0 6px 30px rgba(55, 50, 62, .85);
+                cursor: pointer;
+                transition: 150ms transform ease-in-out;
+                border: 2px solid transparent;
+                &:hover {
+                    transform: scale(1.0125);
+                    border: 2px solid #F8D35E;
+                }
+            }
+            .active-box { border: 2px solid #F8D35E; }
+            .add-new-box {
+                position: relative;
+                background: $more_dark;
+                i {
+                    transition: 150ms all ease-in-out;
+                    color: #C7C7C7;
+                    font-size: 50px;
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover {
+                    border: 2px solid transparent;
+                    transform: scale(1);
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+            @media (max-width: 1280px) {
+                width: calc(92% + 20px); // add margin space to it
+                .box {
+                    margin: 10px;
+                    width: calc(33.33% - 24px);
+                }
+            }
+        }
+    }
+    .add-new-show-popup {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 92%;
+        height: 95vh;
+        background: $more_dark;
+        z-index: 999;
+        border-radius: 8px;
+        .add-new-container {
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            color: #C7C7C7;
+            label {
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 18px;
+                letter-spacing: 2px;
+                display: block;
+                margin-top: 25px;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

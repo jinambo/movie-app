@@ -38,3 +38,17 @@ searchBarBtn.addEventListener('mouseleave', function() {
     searchBarBtn.style.width = "25%";
     searchBarInput.style.width = "75%";
 })
+
+
+// open the video layer 
+let theLayer = document.querySelector('.video-layer');
+let contentBoxes = document.querySelector('.main-content-boxes');
+
+function showEpisode(event) {
+    let episode = event.target.innerHTML.replace(/\s/g, '').slice(2); // delete white characters (spaces) and the first two chars in case of not allowed chars 
+    console.log(episode);
+
+    theLayer.classList.add(episode);
+    contentBoxes.style.display = "none";
+    document.querySelector('.' + episode).style.display = "block"
+}

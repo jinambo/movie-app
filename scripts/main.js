@@ -52,3 +52,37 @@ function showEpisode(event) {
     contentBoxes.style.display = "none";
     document.querySelector('.' + episode).style.display = "block"
 }
+
+
+//show live bar on phone
+let liveBarToggle = true;
+const liveBar = document.querySelector('.live-bar');
+
+function showLiveBar() {
+
+    if (liveBarToggle == true) {
+        liveBar.style.height = "40vh";
+        liveBarToggle = false;  
+    } else {
+        liveBar.style.height = "10vh";
+        liveBarToggle = true;
+    }
+}
+
+
+// toggle navigation on a phone
+let navigationToggle = true;
+const navigation = document.querySelector('.nav-scroll');
+
+function toggleNav() {
+
+    if (navigationToggle == true) {
+        navigation.style.display = "block";
+        liveBar.style.display = "none";
+        navigationToggle = false;
+    } else {
+        navigation.style.display = "none";
+        liveBar.style.display = "block";
+        navigationToggle = true;
+    }
+}

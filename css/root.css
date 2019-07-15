@@ -1,6 +1,5 @@
 body {
   height: 100vh;
-  overflow: hidden;
 }
 
 * {
@@ -49,8 +48,13 @@ input, textarea {
   background: #37323E;
 }
 
-.container nav, .container .main, .container .live-bar {
-  height: 100vh;
+@media (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .container .main {
+    height: auto;
+  }
 }
 
 /* width */

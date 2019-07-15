@@ -1,9 +1,17 @@
 .live-bar {
+    height: 100vh;
     position: relative;
     box-shadow: 0 6px 30px rgba(55, 50, 62, .85);
     z-index: 9;
     overflow-y: scroll;
     overflow-x: hidden;
+    @media (max-width: 600px) {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 10vh;
+        z-index: 999;
+    }
 
     .movie-background {
         position: relative;

@@ -2,10 +2,14 @@ nav {
     position: relative;
     box-shadow: 0 6px 30px rgba(55, 50, 62, .85);
     z-index: 9;
+    height: 100vh;
     .welcome {
         position: relative;
         display: flex;
         padding: 20px;
+        .nav-toggle {
+            display: none;
+        }
         .profile-image {
             width: 100px;
             height: 100px;
@@ -42,6 +46,7 @@ nav {
     }
     .nav-content {
         .nav-scroll {
+            border-top: 2px solid  rgb(42, 37, 48);
             height: 85vh;
             overflow-y: scroll;
         }
@@ -85,6 +90,26 @@ nav {
             }
             .type, .playlist {
                 margin-top: 35px;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        text-align: center;
+        height: auto !important;
+        .welcome {
+            .nav-toggle {
+                display: block;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%);
+                font-size: 25px;
+            }
+        }
+        .nav-content {
+            .nav-scroll {
+                display: none;
             }
         }
     }

@@ -2,13 +2,20 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 100vh;
 }
 
 .main .main-content {
   width: 100%;
-  height: 100px;
   z-index: 999;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  .main .main-content {
+    height: auto;
+    padding-bottom: 60px;
+  }
 }
 
 .main .main-content .search-bar {
@@ -53,6 +60,13 @@
   background: #F8D35E;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .main .main-content .search-bar .search-bar-btn {
+    width: 33%;
+    font-size: 16px;
+  }
 }
 
 .main .main-content .main-content-boxes {
@@ -162,6 +176,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  .main .main-content .main-content-boxes {
+    padding-bottom: 25px;
+  }
+  .main .main-content .main-content-boxes .box {
+    width: calc(50% - 24px) !important;
+  }
+}
+
 .main .add-new-show-popup {
   display: none;
   position: absolute;
@@ -253,6 +276,15 @@
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .main .video-layer .video-layer-content {
+    padding-bottom: 160px;
+  }
+  .main .video-layer .video-layer-content .video {
+    height: 220px;
+  }
+}
+
 .main .video-layer .video-layer-content .controllers {
   text-transform: uppercase;
 }
@@ -276,6 +308,12 @@
 .main .video-layer .video-layer-content .controllers .btn-previous:hover, .main .video-layer .video-layer-content .controllers .btn-next:hover {
   -webkit-box-shadow: 0 2px 36px rgba(248, 211, 94, 0.55);
           box-shadow: 0 2px 36px rgba(248, 211, 94, 0.55);
+}
+
+@media (max-width: 600px) {
+  .main .video-layer .video-layer-content .controllers .btn-previous, .main .video-layer .video-layer-content .controllers .btn-next {
+    padding: 12px 16px;
+  }
 }
 
 .main .video-layer .video-layer-content .controllers .btn-previous {

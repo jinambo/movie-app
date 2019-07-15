@@ -4,7 +4,6 @@ $less_dark: #6D6A75;
 
 body {
     height: 100vh;
-    overflow: hidden;
 }
 
 * {
@@ -41,8 +40,11 @@ input,textarea {
 
     .live-bar { grid-column: span 2 / auto; background: $more_dark; }
     
-    nav, .main, .live-bar {
-        height: 100vh;
+    @media (max-width: 600px) {
+        display: block;
+        .main {
+            height: auto;
+        }
     }
 }
 
